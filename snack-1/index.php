@@ -27,10 +27,6 @@ $partite = [
         'punti_ospite' => 65
     ],
 ];
-
-// for ($i=0; $i < count($partite); $i++) { 
-//     echo $partite[$i];
-// }
 ?>
 
 <!DOCTYPE html>
