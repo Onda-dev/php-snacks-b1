@@ -26,7 +26,11 @@ $partite = [
         'punti_casa' => 55,
         'punti_ospite' => 65
     ],
-]
+];
+
+// for ($i=0; $i < count($partite); $i++) { 
+//     echo $partite[$i];
+// }
 ?>
 
 <!DOCTYPE html>
@@ -38,13 +42,13 @@ $partite = [
     <title>Document</title>
 </head>
 <body>
-    <div class="partita">
-        <div class="squadre">
-            <?php ?>
-        </div>
-        <div class="risultato">
-
-        </div>
-    </div>
+    <ul>
+        <h1>Giornata 1</h1>
+        <?php
+            for($i = 0; $i < count($partite); $i++) {
+                echo "<li>{$partite[$i]['squadra_casa']}-{$partite[$i]['squadra_ospite']} | {$partite[$i]['punti_casa']}-{$partite[$i]['punti_ospite']}</li>";
+            }
+        ?>
+    </ul>
 </body>
 </html>
